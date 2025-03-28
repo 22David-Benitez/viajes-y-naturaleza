@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajes y Naturaleza</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: brown;
+        }
+        .navbar {
+            background-color: lightblue;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            
+       
+        }
+        .cards {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px black (0, 0, 0, 0.2);
+            margin: 10px;
+            padding: 15px;
+            flex: 1;
+            transition: transform 0.3s;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid white;
+        }
+        th {
+            background-color: blue;
+            color: white;
+        }
+        tr:hover {
+            background-color: white;
+        }
+      
+      .nav-link {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none; /* Para quitar el subrayado */
+    transition: color 0.3s ease; /* Transición suave en el color */
+}
+
+.nav-link:hover {
+    color: blue; /* Cambia el color al pasar el ratón */
+}
+      
+      table {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+
+.tabla-animada tr {
+    transition: transform 0.3s ease; 
+}
+
+tr:hover {
+    background-color: blue (0, 123, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.tabla-animada th{
+  transition: transform 0.3s ease;
+}
+
+th:hover {
+    background-color: blue (0, 123, 255, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+}
+
+header {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 10px 0;
+}
+      
+.cards {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black (0, 0, 0, 0.3);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <h2 align="left">Viajes y Naturaleza</h2>
+       <nav align="right">
+    		<a href="#" class="nav-link">Inicio</a>
+    		<a href="#" class="nav-link">Galería</a>
+    		<a href="#" class="nav-link">Destinos</a>
+    		<a href="#" class="nav-link">Contacto</a>
+		</nav>
+    </div>
+
+    <div class="container">
+       
+        <div class="cards">
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5NmXfW2CYU7nQybs7t0abbhsjf7bYJlnV3A&s" alt="Paisajes de Montaña">
+                <h3>Paisajes de Montaña</h3>
+                <p>Impresionantes vistas de cordilleras y picos nevados.</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDQiTsnYqeMQR7BV8-5VcFk2vIREHPsuRCLg&s" alt="Bosques Misteriosos">
+                <h3>Bosques Misteriosos</h3>
+                <p>Explorando la tranquilidad de los bosques antiguos.</p>
+            </div>
+            <div class="card">
+                <img src="https://saposyprincesas.elmundo.es/assets/2020/11/mejores-playas-de-costa-rica-manzanillo-puerto-viejo.jpg" alt="Costas Paradisíacas">
+                <h3>Costas Paradisíacas</h3>
+                <p>Playas de arena blanca y aguas cristalinas.</p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Destino</th>
+                    <th>País</th>
+                    <th>Dificultad</th>
+                    <th>Temporada Recomendada</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Machu Picchu</td>
+                    <td>Perú</td>
+                    <td>Alta</td>
+                    <td>Mayo - Septiembre</td>
+                </tr>
+                <tr>
+                    <td>Glaciares de Patagonia</td>
+                    <td>Argentina</td>
+                    <td>Media</td>
+                    <td>Diciembre - Febrero</td>
+                </tr>
+                <tr>
+                    <td>Islas Galápagos</td>
+                    <td>Ecuador</td>
+                    <td>Baja</td>
+                    <td>Todo el año</td>
+                </tr>
+                <tr>
+                    <td>Torres del Paine</td>
+                    <td>Chile</td>
+                    <td>Alta</td>
+                    <td>Octubre - Marzo</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
